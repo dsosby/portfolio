@@ -1,0 +1,81 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  font-display: swap;
+}
+
+.rays {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ray {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  top: 0;
+  left: 50px;
+  animation: ray-movement-loop 120s ease-in-out infinite;
+}
+
+.ray::before {
+  content: "";
+
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: -50%;
+  transform: rotate(20deg);
+
+  background-color: white;
+  filter: opacity(0.1) blur(30px);
+  mix-blend-mode: lighten;
+}
+
+/*
+ Can this be done dynamically by passing attributes on the element?
+ */
+
+.ray:nth-child(1) {
+  animation-delay: -60s;
+  animation-duration: 120s;
+  left: 30%;
+}
+.ray:nth-child(2) {
+  animation-delay: 0s;
+  animation-duration: 90s;
+  left: 25%;
+}
+.ray:nth-child(3) {
+  animation-delay: -20s;
+  animation-duration: 70s;
+  left: 30%;
+}
+.ray:nth-child(4) {
+  animation-delay: -30s;
+  animation-duration: 100s;
+  left: 35%;
+}
+
+@keyframes ray-movement-loop {
+  0% {
+    transform: translate3d(0vw,0,0);
+  }
+  50% { 
+    transform: translate3d(70vw,0,100px);
+  }
+  100% {
+    transform: translate3d(0vw,0,0);
+  }
+}
+
+.name {
+  text-shadow: 1px 1px 2px rgba(100,100,100,0.3);
+}
+
+.pronounce {
+  cursor: pointer;
+  text-decoration: underline dotted rgba(255, 255, 255, 0.5);
+}
