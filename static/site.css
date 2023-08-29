@@ -30,7 +30,7 @@ body {
   transform: rotate(20deg);
 
   background-color: white;
-  filter: opacity(0.1) blur(30px);
+  filter: opacity(0.1);
   mix-blend-mode: lighten;
 }
 
@@ -42,31 +42,38 @@ body {
   animation-delay: -60s;
   animation-duration: 120s;
   left: 30%;
+  width: 10%;
 }
 .ray:nth-child(2) {
   animation-delay: 0s;
   animation-duration: 90s;
   left: 25%;
+  width: 5%;
 }
 .ray:nth-child(3) {
   animation-delay: -20s;
   animation-duration: 70s;
   left: 30%;
+  width: 15%;
 }
 .ray:nth-child(4) {
   animation-delay: -30s;
   animation-duration: 100s;
   left: 35%;
+  width: 12%;
 }
 
 @keyframes ray-movement-loop {
   0% {
+    filter: blur(2px);
     transform: translate3d(0vw,0,0);
   }
   50% { 
-    transform: translate3d(70vw,0,100px);
+    filter: blur(10px);
+    transform: translate3d(30vw,0,0);
   }
   100% {
+    filter: blur(2px);
     transform: translate3d(0vw,0,0);
   }
 }
@@ -76,6 +83,5 @@ body {
 }
 
 .pronounce {
-  cursor: pointer;
   text-decoration: underline dotted rgba(255, 255, 255, 0.5);
 }
