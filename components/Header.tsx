@@ -1,14 +1,19 @@
+import type { ComponentChildren } from "preact";
 import Rays from "./Rays.tsx";
 
-export default function Header() {
+export type HeaderProps = {
+  children: ComponentChildren;
+  hero?: boolean;
+  rays?: boolean;
+}
+
+export default function Header({ children, hero, rays }: HeaderProps) {
+  const height = hero ? 'h-96' : 'h-50';
   return (
-    <div class="relative max-w-screen h-96 bg-gradient-to-r from-carolinaBlue to-blue border-b-1 border-white border-solid">
-      <Rays />
+    <div class={`relative max-w-screen ${height}  bg-gradient-to-r from-carolinaBlue to-blue border-b-1 border-white border-solid`}>
+      { rays && <Rays /> }
       <div class="relative flex h-full flex-col items-center justify-center">
-        <h1 class="text-5xl font-normal tracking-wide">Hi, I'm <span class="name">David!</span> 👋🏻</h1>
-        <h2 class="text-2xl font-light tracking-wide">
-          but friends just call me <span title="saws-bee" class="pronounce">sosby</span>
-        </h2>
+        { children }
       </div>
     </div>
   )

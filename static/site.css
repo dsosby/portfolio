@@ -1,7 +1,8 @@
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
 body {
   font-display: swap;
+  font-weight: 300;
 }
 
 .rays {
