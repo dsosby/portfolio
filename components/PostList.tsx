@@ -1,5 +1,5 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { Post } from "../data/posts.ts";
+import { Post } from "@/data/posts.ts";
 import PostSummary from "./PostSummary.tsx";
 
 export type PostListProps = {
