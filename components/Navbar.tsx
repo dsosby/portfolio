@@ -3,7 +3,7 @@ import Logo from "@/components/Logo.tsx";
 
 export default function Navbar() {
   return (
-    <nav class="container mx-auto flex flex-row justify-between items-center">
+    <nav class="container mx-auto flex flex-row flex-wrap justify-between items-center">
       <div class="flex flex-row items-center gap-5">
         <a href="/">
           <Logo />
@@ -20,7 +20,7 @@ export default function Navbar() {
           </a>
         </div>
       </div>
-      <div class="basis-0 flex flex-row gap-5">
+      <div class="basis-0 flex flex-row gap-3 mx-2">
         <a
           href="https://github.com/dsosby"
           target="_blank"
