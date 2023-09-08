@@ -1,21 +1,24 @@
-import { IconBrandGithub, IconBrandLinkedin, IconArrowBadgeRight } from './Icons.ts';
+import { IconBrandGithub, IconBrandLinkedin } from './Icons.ts';
 import Logo from "@/components/Logo.tsx";
 
 export default function Navbar() {
   return (
     <nav class="container mx-auto flex flex-row justify-between items-center">
-      <div class="basis-0">
+      <div class="flex flex-row items-center gap-5">
         <a href="/">
           <Logo />
         </a>
-      </div>
-      <div class="basis-1 flex flex-row w-full justify-center gap-5">
-        <a href="/career">
-          <span class="font-light">Career</span>
-        </a>
-        <a href="/about">
-          <span class="font-light">About</span>
-        </a>
+        <div class="flex flex-row items-center gap-3">
+          <a href="/articles">
+            <span class="font-light">Articles</span>
+          </a>
+          <a href="/career">
+            <span class="font-light">Career</span>
+          </a>
+          <a href="/about">
+            <span class="font-light">About</span>
+          </a>
+        </div>
       </div>
       <div class="basis-0 flex flex-row gap-5">
         <a
