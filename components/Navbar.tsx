@@ -1,6 +1,4 @@
-import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-github.tsx";
-import IconBrandLinkedin from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-linkedin.tsx";
-import IconArrowBadgeRight from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/arrow-badge-right.tsx";
+import { IconBrandGithub, IconBrandLinkedin, IconArrowBadgeRight } from './Icons.ts';
 
 export default function Navbar() {
   return (
