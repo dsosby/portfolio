@@ -19,7 +19,7 @@ export default function PostPage({ data: post }: PageProps<Post>) {
         <title>{`David Sosby - ${post.title}`}</title>
       </Head>
       <Navbar />
-      <main class="container mx-auto mt-5">
+      <main class="container mx-auto mt-5 px-5 md:px-0">
         <PostComponent post={post} />
       </main>
     </>

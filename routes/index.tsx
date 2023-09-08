@@ -22,7 +22,7 @@ export default function Home({ data: posts }: PageProps<Post[]>) {
           <span title="saws-bee" class="pronounce">sosby</span>
         </h2>
       </Header>
-      <main class="container mx-auto mt-5">
+      <main class="container mx-auto mt-5 px-5 md:px-0">
         <PostList posts={posts} />
       </main>
     </>
