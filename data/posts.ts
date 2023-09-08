@@ -14,7 +14,7 @@ export type Post = {
   date: Date;
 };
 
-async function getPost(slug: string): Promise<Post> {
+export async function getPost(slug: string): Promise<Post> {
   const text = await Deno.readTextFile(join("./data/posts", `${slug}.md`));
   const { attrs, body } = extract<Frontmatter>(text);
 
