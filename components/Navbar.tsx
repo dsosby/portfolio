@@ -1,13 +1,12 @@
 import { IconBrandGithub, IconBrandLinkedin, IconArrowBadgeRight } from './Icons.ts';
+import Logo from "@/components/Logo.tsx";
 
 export default function Navbar() {
   return (
     <nav class="container mx-auto flex flex-row justify-between items-center">
       <div class="basis-0">
         <a href="/">
-          <div class="flex flex-row items-center justify-center">
-            <IconArrowBadgeRight class="inline w-8 h-8" /><span><span class="font-black">sosby</span>.dev</span>
-          </div>
+          <Logo />
         </a>
       </div>
       <div class="basis-1 flex flex-row w-full justify-center gap-5">
