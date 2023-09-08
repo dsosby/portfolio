@@ -11,6 +11,7 @@ export default function App({ Component }: AppProps) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="/site.css" rel="stylesheet" />
+        <link href="/markdown.css" rel="stylesheet" />
       </head>
       <body class="m-0 bg-prussianBlue text-white font-body">
         <Component />

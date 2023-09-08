@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
+:root {
+  --color-carolina-blue: #74B3CE;
+  --color-blue: #508991;
+  --color-prussian-blue: #172A3A;
+  --color-midnight-green: #004346;
+  --color-mint: #09BC8A;
+  --color-body-text: rgba(255, 255, 255, 0.85);
+  --color-prominent-text: rgba(255, 255, 255, 1.0);
+}
+
 body {
   font-display: swap;
   font-weight: 300;

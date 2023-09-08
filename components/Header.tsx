@@ -3,7 +3,7 @@ import Rays from "./Rays.tsx";
 import Navbar from "./Navbar.tsx";
 
 export type HeaderProps = {
-  children: ComponentChildren;
+  children?: ComponentChildren;
   hero?: boolean;
   rays?: boolean;
 }
