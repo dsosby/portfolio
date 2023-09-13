@@ -6,6 +6,7 @@ categories:
 - Clojure
 - ClojureScript
 tags: []
+summary: My experience getting started with ClojureScript, a Clojure-to-JavaScript toolset
 ---
 
 I've been playing a lot lately with [ClojureScript](https://github.com/clojure/clojurescript), especially with regards to mobile development (more on that to come later). Clojure has never been known for great error messages, and ClojureScript is probably even worse in that regard.

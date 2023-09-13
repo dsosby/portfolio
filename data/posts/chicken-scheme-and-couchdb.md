@@ -6,6 +6,7 @@ categories:
 - ChickenScheme
 - CouchDB
 tags: []
+summary: Exploring the use of CouchDB in the Chicken Scheme language
 ---
 
 ## Why?

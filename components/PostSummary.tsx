@@ -6,8 +6,8 @@ export type PostSummaryProps = {
 }
 
 export default function PostSummary({ post }: PostSummaryProps) {
-  const renderedPost = render(post.content);
   const link = `/posts/${post.slug}`;
+  const { summary }= post;
 
   return (
     <div class="flex flex-col mb-5">
@@ -16,7 +16,7 @@ export default function PostSummary({ post }: PostSummaryProps) {
           {post.title}
         </a>
       </h1>
-      <div class="markdown-body" data-color-mode="dark" data-dark-theme="dark" dangerouslySetInnerHTML={{ __html: renderedPost }} />
+      <h6 class="text-md font-light">{summary}</h6>
     </div>
   );
 }

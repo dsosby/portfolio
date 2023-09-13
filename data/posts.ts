@@ -5,6 +5,7 @@ type Frontmatter = {
   title: string;
   date: string;
   tags: string[];
+  summary: string;
 };
 
 export type Post = {
@@ -12,6 +13,7 @@ export type Post = {
   slug: string;
   content: string;
   date: Date;
+  summary: string;
 };
 
 export async function getPost(slug: string): Promise<Post> {
@@ -23,6 +25,7 @@ export async function getPost(slug: string): Promise<Post> {
     title: attrs.title,
     content: body,
     date: new Date(attrs.date),
+    summary: attrs.summary,
   };
 }
 

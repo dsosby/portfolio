@@ -8,6 +8,7 @@ tags:
 - code
 - codestyle
 - conditionals
+summary: Go deep on the performance impacts of extracting named variables in Java
 ---
 
 ```

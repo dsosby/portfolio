@@ -5,6 +5,7 @@ layout: post
 categories:
 - Clojure
 tags: []
+summary: Train of thought as I work through learning functional development with Clojure
 ---
 
 I've been trying out <a href="http://clojure.org" target="_blank">Clojure</a> lately. Reasons, non-exclusive, for choosing Clojure?
