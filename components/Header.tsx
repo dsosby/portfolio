@@ -9,7 +9,7 @@ export type HeaderProps = {
 }
 
 export default function Header({ children, hero, rays }: HeaderProps) {
-  const height = hero ? 'h-96' : 'h-50';
+  const height = hero ? 'h-72 sm:h-96' : 'h-50';
   return (
     <div class={`relative max-w-screen ${height}  bg-gradient-to-r from-carolinaBlue to-blue border-b-1 border-white border-solid`}>
       { rays && <Rays /> }

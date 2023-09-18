@@ -14,10 +14,10 @@ export default function Home({ data: posts }: PageProps<Post[]>) {
   return (
     <>
       <Header rays hero>
-        <h1 class="text-5xl font-normal tracking-wide">
+        <h1 class="text-4xl sm:text-5xl font-normal tracking-wide">
           Hi, I'm <span class="name">David!</span> 👋🏻
         </h1>
-        <h2 class="text-2xl font-light tracking-wide">
+        <h2 class="text-xl sm:text-2xl font-light tracking-wide">
           but friends just call me{" "}
           <span title="saws-bee" class="pronounce">sosby</span>
         </h2>
