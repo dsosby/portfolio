@@ -13,10 +13,10 @@ export default function Header({ children, hero, rays }: HeaderProps) {
   return (
     <div class={`relative max-w-screen ${height}  bg-gradient-to-r from-carolinaBlue to-blue border-b-1 border-white border-solid`}>
       { rays && <Rays /> }
-      <div class="relative w-full">
-        <Navbar />
-      </div>
       <div class="relative flex h-full flex-col items-center justify-center">
+        <div class={`${hero ? 'absolute' : 'relative'} w-full top-0`}>
+          <Navbar />
+        </div>
         { children }
       </div>
     </div>
