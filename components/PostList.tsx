@@ -8,12 +8,12 @@ export type PostListProps = {
 
 export default function PostList({ posts }: PostListProps) {
   return (
-    <main class="w-full mx-auto">
+    <div class="w-full mx-auto">
       <ul>
         <li>
           {posts.map((post) => <PostSummary post={post} />)}
         </li>
       </ul>
-    </main>
+    </div>
   );
 }
