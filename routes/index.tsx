@@ -1,5 +1,11 @@
+import { ComponentChildren } from "preact";
+
 import ContactForm from "@/components/ContactForm.tsx";
 import Header from "@/components/Header.tsx";
+
+function BoldedSpan({ children }: { children: ComponentChildren }) {
+  return <span class="font-normal">{children}</span>;
+}
 
 export default function Home() {
   return (
@@ -13,10 +19,10 @@ export default function Home() {
           <span title="saws-bee" class="pronounce">sosby</span>
         </h2>
       </Header>
-      <div class="container mx-auto mt-5 px-5 flex gap-5 flex-col md:flex-row">
-        <main class="md:w-1/2 text-lg font-light tracking-wide center p-5">
-          <p>I'm a full-stack engineer that loves to build apps that make users happy and productive.</p>
-          <h3 class="text-lg font-light tracking-wide">Have a project in mind? Let's talk!</h3>
+      <div class="container mx-auto mt-5 px-5 flex gap-5 flex-col md:flex-row p-5">
+        <main class="md:w-1/2 text-lg font-light tracking-wide justify">
+          <p>I'm a <BoldedSpan>full-stack engineer</BoldedSpan> who loves crafting apps that bring happiness and productivity to users.</p>
+          <h3 class="text-lg font-light tracking-wide mt-10 text-center">Have a project in mind? Let's talk!</h3>
         </main>
         <aside class="md:w-1/2">
           <ContactForm />
