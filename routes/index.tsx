@@ -1,16 +1,7 @@
-import { Handlers, PageProps } from "$fresh/server.ts";
-import Header from "../components/Header.tsx";
-import PostList from "../components/PostList.tsx";
-import { getPosts, Post } from "../data/posts.ts";
+import ContactForm from "@/components/ContactForm.tsx";
+import Header from "@/components/Header.tsx";
 
-export const handler: Handlers<Post[]> = {
-  async GET(_req, ctx) {
-    const posts = await getPosts();
-    return ctx.render(posts);
-  },
-};
-
-export default function Home({ data: posts }: PageProps<Post[]>) {
+export default function Home() {
   return (
     <>
       <Header rays hero>
@@ -22,9 +13,15 @@ export default function Home({ data: posts }: PageProps<Post[]>) {
           <span title="saws-bee" class="pronounce">sosby</span>
         </h2>
       </Header>
-      <main class="container mx-auto mt-5 px-5">
-        <PostList posts={posts} />
-      </main>
+      <div class="container mx-auto mt-5 px-5 flex gap-5 flex-col md:flex-row">
+        <main class="md:w-1/2 text-lg font-light tracking-wide center p-5">
+          <p>I'm a full-stack engineer that loves to build apps that make users happy and productive.</p>
+          <h3 class="text-lg font-light tracking-wide">Have a project in mind? Let's talk!</h3>
+        </main>
+        <aside class="md:w-1/2">
+          <ContactForm />
+        </aside>
+      </div>
     </>
   );
 }

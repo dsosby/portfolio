@@ -6,7 +6,7 @@ export default function App({ Component }: AppProps) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>David Sosby - Engineer</title>
+        <title>David Sosby | sosby.dev</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

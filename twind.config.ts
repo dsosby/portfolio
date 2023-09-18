@@ -14,6 +14,7 @@ export default {
         prussianBlue: "#172A3A",
         midnightGreen: "#004346",
         mint: "#09BC8A",
+        shamrockGreen: "#079C72",
       }
     }
   }
