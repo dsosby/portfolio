@@ -8,7 +8,7 @@ export default function About() {
         <div class="container flex flex-row justify-between w-full">
           <Metric title="Years of Experience" value="15+" />
           <Metric title="Patents" value="2" />
-          <Metric title="Deployed Languages" value="10" />
+          <Metric title="Languages" value="11" />
         </div>
       </Header>
       <main class="container mx-auto">
@@ -26,12 +26,11 @@ export default function About() {
             including:
           </p>
           <ul class="list-disc mx-5 my-3">
-            <li>Desktop, Mobile, and Web</li>
+            <li>Web, Mobile, Desktop</li>
             <li>
-              Java, C, Python, C++, C#, PowerShell, F#, JavaScript, TypeScript,
-              Go, and Scheme
+              TypeScript, JavaScript, F#, C#, Go, Java, C, Python, C++, PowerShell, Scheme
             </li>
-            <li>Swing, Qt, Windows, Android, AngularJS, React</li>
+            <li>React, Angular, Android, Qt, Windows, Android</li>
           </ul>
           <p class="my-2">Let's build something together!</p>
         </div>
