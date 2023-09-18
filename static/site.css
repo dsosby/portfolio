@@ -15,6 +15,10 @@ body {
   font-weight: 300;
 }
 
+main p {
+  margin-bottom: 1rem;
+}
+
 .rays {
   position: absolute;
   width: 100%;
