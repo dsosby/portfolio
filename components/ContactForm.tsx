@@ -18,15 +18,15 @@ export default function ContactForm() {
       <div class="flex flex-col gap-3">
         <FieldBlock>
           <label class="block" for="name">Name</label>
-          <Input name="name" type="text" />
+          <Input id="name" name="name" type="text" />
         </FieldBlock>
         <FieldBlock>
           <label class="block" for="email">Email</label>
-          <Input name="email" type="email" />
+          <Input id="email" name="email" type="email" aria-required="true" required={true} />
         </FieldBlock>
         <FieldBlock>
           <label class="block" for="message">Message</label>
-          <TextArea name="message" />
+          <TextArea id="message" name="message" />
         </FieldBlock>
         <div class="flex flex-row justify-end">
           <Button type="submit">Let's Go!</Button>
