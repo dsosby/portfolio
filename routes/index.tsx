@@ -19,13 +19,13 @@ export default function Home() {
           <span title="saws-bee" class="pronounce">sosby</span>
         </h2>
       </Header>
-      <div class="container mx-auto mt-5 px-5 flex gap-5 flex-col md:flex-row p-5">
+      <div class="container mx-auto mt-5 px-5 flex gap-5 flex-col md:flex-row md:justify-between p-5">
         <main class="md:w-1/2 text-lg font-light tracking-wide justify">
           <p>I'm a <BoldedSpan>full-stack engineer</BoldedSpan> focused on the user experience.</p>
           <p>On teams, I love to <BoldedSpan>mentor</BoldedSpan> and teach, and provide a focus on <BoldedSpan>what drives our business</BoldedSpan>.</p>
           <h3 class="text-xl font-light tracking-wide mt-10 text-center">Have a project in mind? Let's talk!</h3>
         </main>
-        <aside class="md:w-1/2">
+        <aside class="md:w-1/2 md:flex md:flex-col md:items-center">
           <ContactForm />
         </aside>
       </div>
