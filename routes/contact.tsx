@@ -21,24 +21,25 @@ export const handler: Handlers = {
           body: JSON.stringify({
             personalizations: [
               {
-                to: [{ email }],
+                to: [{
+                  email: Deno.env.get("SENDGRID_TO_EMAIL"),
+                }],
+                dynamic_template_data: {
+                  name,
+                  email,
+                  message,
+                },
               },
             ],
             from: {
               email: Deno.env.get("SENDGRID_FROM_EMAIL"),
             },
-            content: [
-              {
-                type: "text/plain",
-                value: `name: ${name}\nemail: ${email}\nmessage: ${message}`,
-              },
-            ],
             template_id: Deno.env.get("SENDGRID_CONTACT_TEMPLATE_ID") ??
               "d-bd99276a1f994be687fd00a1156304f0",
           }),
         });
 
-        console.log(await response.json());
+        console.log(`SendGrid Contact: ${response.status}`);
       } catch (err: unknown) {
         console.error(err);
       }
@@ -59,7 +60,7 @@ export default function Contact() {
       <Header />
       <div class="px-4 py-8 mx-auto">
         <div class="max-w-screen-md h-screen mx-auto flex flex-col items-center justify-center">
-          <a href="/" class="underline mt-5"><Logo size="large" /></a>
+          <Logo size="large" />
           <h1 class="text-4xl font-bold">Thank you!</h1>
           <p class="my-4">
             We'll be in touch soon.
