@@ -14,7 +14,7 @@ function FieldBlock({ children }: { children: ComponentChildren }) {
 
 export default function ContactForm() {
   return (
-    <form class="w-full md:max-w-sm">
+    <form action="/contact" method="post" class="w-full md:max-w-sm">
       <div class="flex flex-col gap-3">
         <FieldBlock>
           <label class="block" for="name">Name</label>
