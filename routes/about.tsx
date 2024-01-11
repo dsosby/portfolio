@@ -30,7 +30,7 @@ export default function About() {
             <li>
               TypeScript, JavaScript, F#, C#, Go, Java, C, Python, C++, PowerShell, Scheme
             </li>
-            <li>React, Angular, Android, Qt, Windows, Android</li>
+            <li>React, Angular, Android, Qt, Windows</li>
           </ul>
           <p class="my-2">Let's build something together!</p>
         </div>
